@@ -1,8 +1,13 @@
 {% load static %}
 
 
+{% load compress %}
+
+
+
 <!doctype html>
 <html class="no-js" lang="zxx">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -27,6 +32,38 @@
     <link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
     <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    {% comment %} scss files {% endcomment %}
+
+    {% compress css %}
+
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_about.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_blog_page.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_bradcam.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_collaps.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_color.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_common.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_contact.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_contact_form.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_courses.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_elements.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_extend.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_footer.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_h1-hero.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_headerMenu.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_load-balnceing.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_login.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_mixins.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_overlay.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_services_section.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_services.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_team.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_testimonial.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_top-sub.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_variables.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_wantToWork.scss' %}">
+    <link rel="stylesheet" type="text/scss" href="{% static 'static/scss/_style.scss' %}">
+    {% endcompress %}
 
 </head>
 
@@ -61,8 +98,8 @@
                                     <!-- Main-menu -->
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
-                                            <ul id="navigation">                                                                                          
-                                                <li class="active" ><a href="index.html">Home</a></li>
+                                            <ul id="navigation">
+                                                <li class="active"><a href="index.html">Home</a></li>
                                                 <li><a href="courses.html">Services</a></li>
                                                 <li><a href="about.html">About</a></li>
                                                 <li><a href="#">Blog</a>
@@ -73,12 +110,13 @@
                                                 </li>
                                                 <li><a href="contact.html">Contact</a></li>
                                                 <!-- Button -->
-                                                <li class="button-header"><a href="login.html" class="btn btn3">Log in</a></li>
+                                                <li class="button-header"><a href="login.html" class="btn btn3">Log
+                                                        in</a></li>
                                             </ul>
                                         </nav>
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
                             <!-- Mobile Menu -->
                             <div class="col-12">
                                 <div class="mobile_menu d-block d-lg-none"></div>
@@ -101,12 +139,14 @@
                             <div class="col-xl-6 col-lg-7 col-md-12">
                                 <div class="hero__caption">
                                     <h1 data-animation="fadeInLeft" data-delay="0.2s">Online learning<br> platform</h1>
-                                    <p data-animation="fadeInLeft" data-delay="0.4s">Build skills with courses, certificates, and degrees online from world-class universities and companies</p>
-                                    <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Join for Free</a>
+                                    <p data-animation="fadeInLeft" data-delay="0.4s">Build skills with courses,
+                                        certificates, and degrees online from world-class universities and companies</p>
+                                    <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Join
+                                        for Free</a>
                                 </div>
                             </div>
                         </div>
-                    </div>          
+                    </div>
                 </div>
             </div>
         </section>
@@ -170,7 +210,8 @@
                             <div class="properties__caption">
                                 <p>User Experience</p>
                                 <h3><a href="#">Fundamental of UX for Application design</a></h3>
-                                <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
+                                <p>The automated process all your website tasks. Discover tools and techniques to engage
+                                    effectively with vulnerable children and young people.
 
                                 </p>
                                 <div class="properties__footer d-flex justify-content-between align-items-center">
@@ -203,7 +244,8 @@
                             <div class="properties__caption">
                                 <p>User Experience</p>
                                 <h3><a href="#">Fundamental of UX for Application design</a></h3>
-                                <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
+                                <p>The automated process all your website tasks. Discover tools and techniques to engage
+                                    effectively with vulnerable children and young people.
                                 </p>
                                 <div class="properties__footer d-flex justify-content-between align-items-center">
                                     <div class="restaurant-name">
@@ -234,7 +276,8 @@
                             <div class="properties__caption">
                                 <p>User Experience</p>
                                 <h3><a href="#">Fundamental of UX for Application design</a></h3>
-                                <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
+                                <p>The automated process all your website tasks. Discover tools and techniques to engage
+                                    effectively with vulnerable children and young people.
 
                                 </p>
                                 <div class="properties__footer d-flex justify-content-between align-items-center">
@@ -267,7 +310,8 @@
                             <div class="properties__caption">
                                 <p>User Experience</p>
                                 <h3><a href="#">Fundamental of UX for Application design</a></h3>
-                                <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
+                                <p>The automated process all your website tasks. Discover tools and techniques to engage
+                                    effectively with vulnerable children and young people.
 
                                 </p>
                                 <div class="properties__footer d-flex justify-content-between align-items-center">
@@ -306,9 +350,9 @@
                     <div class="section-tittle section-tittle2 mb-55">
                         <div class="front-text">
                             <h2 class="">Learn new skills online with top educators</h2>
-                            <p>The automated process all your website tasks. Discover tools and 
-                                techniques to engage effectively with vulnerable children and young 
-                            people.</p>
+                            <p>The automated process all your website tasks. Discover tools and
+                                techniques to engage effectively with vulnerable children and young
+                                people.</p>
                         </div>
                     </div>
                     <div class="single-features">
@@ -324,7 +368,7 @@
                             <img src="{% static 'img/icon/right-icon.svg' %}" alt="">
                         </div>
                         <div class="features-caption">
-                            <p>Join millions of people from around the world  learning together.</p>
+                            <p>Join millions of people from around the world learning together.</p>
                         </div>
                     </div>
 
@@ -333,7 +377,8 @@
                             <img src="{% static 'img/icon/right-icon.svg' %}" alt="">
                         </div>
                         <div class="features-caption">
-                            <p>Join millions of people from around the world learning together. Online learning is as easy and natural.</p>
+                            <p>Join millions of people from around the world learning together. Online learning is as
+                                easy and natural.</p>
                         </div>
                     </div>
                 </div>
@@ -342,8 +387,9 @@
                     <div class="right-img">
                         <img src="{% static 'img/gallery/about2.png' %}" alt="">
 
-                        <div class="video-icon" >
-                            <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0"><i class="fas fa-play"></i></a>
+                        <div class="video-icon">
+                            <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0"><i
+                                    class="fas fa-play"></i></a>
                         </div>
                     </div>
                 </div>
@@ -498,7 +544,7 @@
                         </div>
                         <div class="features-caption">
                             <p>Join millions of people from around the world
-                            learning together.</p>
+                                learning together.</p>
                         </div>
                     </div>
                     <div class="single-features">
@@ -507,7 +553,7 @@
                         </div>
                         <div class="features-caption">
                             <p>Join millions of people from around the world learning together.
-                            Online learning is as easy and natural.</p>
+                                Online learning is as easy and natural.</p>
                         </div>
                     </div>
                 </div>
@@ -590,8 +636,9 @@
                             <h2 class="">Take the next step
                                 toward your personal
                                 and professional goals
-                            with us.</h2>
-                            <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.</p>
+                                with us.</h2>
+                            <p>The automated process all your website tasks. Discover tools and techniques to engage
+                                effectively with vulnerable children and young people.</p>
                             <a href="#" class="btn">Join now for Free</a>
                         </div>
                     </div>
@@ -601,142 +648,149 @@
         <!-- About Area End -->
     </main>
     <footer>
-     <div class="footer-wrappper footer-bg">
-        <!-- Footer Start-->
-        <div class="footer-area footer-padding">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="single-footer-caption mb-30">
-                                <!-- logo -->
-                                <div class="footer-logo mb-25">
-                                    <a href="index.html"><img src="{% static 'img/logo/logo2_footer.png' %}" alt=""></a>
-                                </div>
-                                <div class="footer-tittle">
-                                    <div class="footer-pera">
-                                        <p>The automated process starts as soon as your clothes go into the machine.</p>
+        <div class="footer-wrappper footer-bg">
+            <!-- Footer Start-->
+            <div class="footer-area footer-padding">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6">
+                            <div class="single-footer-caption mb-50">
+                                <div class="single-footer-caption mb-30">
+                                    <!-- logo -->
+                                    <div class="footer-logo mb-25">
+                                        <a href="index.html"><img src="{% static 'img/logo/logo2_footer.png' %}"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="footer-tittle">
+                                        <div class="footer-pera">
+                                            <p>The automated process starts as soon as your clothes go into the machine.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- social -->
+                                    <div class="footer-social">
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
                                     </div>
                                 </div>
-                                <!-- social -->
-                                <div class="footer-social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Our solutions</h4>
+                                    <ul>
+                                        <li><a href="#">Design & creatives</a></li>
+                                        <li><a href="#">Telecommunication</a></li>
+                                        <li><a href="#">Restaurant</a></li>
+                                        <li><a href="#">Programing</a></li>
+                                        <li><a href="#">Architecture</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Our solutions</h4>
-                                <ul>
-                                    <li><a href="#">Design & creatives</a></li>
-                                    <li><a href="#">Telecommunication</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Programing</a></li>
-                                    <li><a href="#">Architecture</a></li>
-                                </ul>
+                        <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Support</h4>
+                                    <ul>
+                                        <li><a href="#">Design & creatives</a></li>
+                                        <li><a href="#">Telecommunication</a></li>
+                                        <li><a href="#">Restaurant</a></li>
+                                        <li><a href="#">Programing</a></li>
+                                        <li><a href="#">Architecture</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Support</h4>
-                                <ul>
-                                    <li><a href="#">Design & creatives</a></li>
-                                    <li><a href="#">Telecommunication</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Programing</a></li>
-                                    <li><a href="#">Architecture</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Company</h4>
-                                <ul>
-                                    <li><a href="#">Design & creatives</a></li>
-                                    <li><a href="#">Telecommunication</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Programing</a></li>
-                                    <li><a href="#">Architecture</a></li>
-                                </ul>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Company</h4>
+                                    <ul>
+                                        <li><a href="#">Design & creatives</a></li>
+                                        <li><a href="#">Telecommunication</a></li>
+                                        <li><a href="#">Restaurant</a></li>
+                                        <li><a href="#">Programing</a></li>
+                                        <li><a href="#">Architecture</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- footer-bottom area -->
+            <div class="footer-bottom-area">
+                <div class="container">
+                    <div class="footer-border">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-xl-12 ">
+                                <div class="footer-copy-right text-center">
+                                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                        Copyright &copy;
+                                        <script>document.write(new Date().getFullYear());</script> All rights reserved |
+                                        This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
+                                            href="https://colorlib.com" target="_blank">Colorlib</a>
+                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End-->
         </div>
-        <!-- footer-bottom area -->
-        <div class="footer-bottom-area">
-            <div class="container">
-                <div class="footer-border">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-xl-12 ">
-                            <div class="footer-copy-right text-center">
-                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- Footer End-->
-      </div>
-  </footer> 
-  <!-- Scroll Up -->
-  <div id="back-top" >
-    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
-</div>
+    </footer>
+    <!-- Scroll Up -->
+    <div id="back-top">
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
 
-<!-- JS here -->
-<script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}" defer></script>
-<!-- Jquery, Popper, Bootstrap -->
-<script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}" defer></script>
-<script src="{% static 'js/popper.min.js' %}" defer></script>
-<script src="{% static 'js/bootstrap.min.js' %}" defer></script>
-<!-- Jquery Mobile Menu -->
-<script src="{% static 'js/jquery.slicknav.min.js' %}" defer></script>
+    <!-- JS here -->
+    <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}" defer></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}" defer></script>
+    <script src="{% static 'js/popper.min.js' %}" defer></script>
+    <script src="{% static 'js/bootstrap.min.js' %}" defer></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="{% static 'js/jquery.slicknav.min.js' %}" defer></script>
 
-<!-- Jquery Slick , Owl-Carousel Plugins -->
-<script src="{% static 'js/owl.carousel.min.js' %}" defer></script>
-<script src="{% static 'js/slick.min.js' %}" defer></script>
-<!-- One Page, Animated-HeadLin -->
-<script src="{% static 'js/wow.min.js' %}" defer></script>
-<script src="{% static 'js/animated.headline.js' %}" defer></script> 
-<script src="{% static 'js/jquery.magnific-popup.js' %}" defer></script> 
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="{% static 'js/owl.carousel.min.js' %}" defer></script>
+    <script src="{% static 'js/slick.min.js' %}" defer></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="{% static 'js/wow.min.js' %}" defer></script>
+    <script src="{% static 'js/animated.headline.js' %}" defer></script>
+    <script src="{% static 'js/jquery.magnific-popup.js' %}" defer></script>
 
-<!-- Date Picker -->
-<script src="{% static 'js/gijgo.min.js' %}" defer></script>
-<!-- Nice-select, sticky -->
-<script src="{% static 'js/jquery.nice-select.min.js' %}" defer></script>
-<script src="{% static 'js/jquery.sticky.js' %}" defer></script>
-<!-- Progress -->
-<script src="{% static 'js/jquery.barfiller.js' %}" defer></script>
+    <!-- Date Picker -->
+    <script src="{% static 'js/gijgo.min.js' %}" defer></script>
+    <!-- Nice-select, sticky -->
+    <script src="{% static 'js/jquery.nice-select.min.js' %}" defer></script>
+    <script src="{% static 'js/jquery.sticky.js' %}" defer></script>
+    <!-- Progress -->
+    <script src="{% static 'js/jquery.barfiller.js' %}" defer></script>
 
-<!-- counter , waypoint,Hover Direction -->
-<script src="{% static 'js/hover-direction-snake.min.js' %}" defer></script>
-<script src="{% static 'js/jquery.countdown.min.js' %}" defer></script>
-<script src="{% static 'js/waypoints.min.js' %}" defer></script>
-<script src="{% static 'js/jquery.counterup.min.js' %}" defer></script>
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="{% static 'js/hover-direction-snake.min.js' %}" defer></script>
+    <script src="{% static 'js/jquery.countdown.min.js' %}" defer></script>
+    <script src="{% static 'js/waypoints.min.js' %}" defer></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}" defer></script>
 
-<!-- contact js -->
-<script src="{% static 'js/jquery.ajaxchimp.min.js' %}" defer></script>
-<script src="{% static 'js/mail-script.js' %}" defer></script>
-<script src="{% static 'js/jquery.validate.min.js' %}" defer></script>
-<script src="{% static 'js/jquery.form.js' %}" defer></script>
-<script src="{% static 'js/contact.js' %}" defer></script>
+    <!-- contact js -->
+    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}" defer></script>
+    <script src="{% static 'js/mail-script.js' %}" defer></script>
+    <script src="{% static 'js/jquery.validate.min.js' %}" defer></script>
+    <script src="{% static 'js/jquery.form.js' %}" defer></script>
+    <script src="{% static 'js/contact.js' %}" defer></script>
 
-<!-- Jquery Plugins, main Jquery -->	
-<script src="{% static 'js/plugins.js' %}" defer></script>
-<script src="{% static 'js/main.js' %}" defer></script>
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="{% static 'js/plugins.js' %}" defer></script>
+    <script src="{% static 'js/main.js' %}" defer></script>
 
 </body>
+
 </html>
