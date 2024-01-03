@@ -38,13 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
-    'compressor',
+    # 'compressor',
 ]
 
-COMPRESS_ENABLED = True
-COMPRESS_PRECOMPILERS = (
-    ('text/scss', 'django_libsass.SassCompiler'),
-)
+# COMPRESS_ENABLED = True
+# COMPRESS_PRECOMPILERS = (
+#     ('text/scss', 'django_libsass.SassCompiler'),
+# )
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -124,14 +124,14 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
-COMPRESS_ROOT = BASE_DIR / 'compressed_static'
+# STATIC_ROOT = BASE_DIR / 'staticfiles'
+# COMPRESS_ROOT = BASE_DIR / 'compressed_static'
 
-STATICFILES_FINDERS = [
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'compressor.finders.CompressorFinder',  # Add this line
-]
+# STATICFILES_FINDERS = [
+#     'django.contrib.staticfiles.finders.FileSystemFinder',
+#     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+#     'compressor.finders.CompressorFinder',  # Add this line
+# ]
 
 
 # Default primary key field type
