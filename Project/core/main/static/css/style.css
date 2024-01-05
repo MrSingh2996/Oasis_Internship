@@ -7347,3 +7347,17 @@ del {
 .switch-wrap {
     margin-bottom: 10px
 }
+
+
+
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    background-attachment: fixed; /* Keep the background fixed */
+}
